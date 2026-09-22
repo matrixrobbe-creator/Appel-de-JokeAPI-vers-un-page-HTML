@@ -8,11 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Récupération des blagues enregistrées ou tableau vide
     let blagues = JSON.parse(localStorage.getItem('sauvegarde_blagues')) || [];
 
-    // Sauvegarde dans le navigateur
-    function sauvegarder() {
-        localStorage.setItem('sauvegarde_blagues', JSON.stringify(blagues));
-    }
-
     // Affichage des blagues dans le tableau HTML
     function afficherTableau() {
         tableauCorps.innerHTML = '';

@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnVider = document.getElementById('btn-vider');
     const tableauCorps = document.getElementById('tableau-corps');
 
-    // Récupération des blagues enregistrées ou tableau vide
-    let blagues = JSON.parse(localStorage.getItem('sauvegarde_blagues')) || [];
-
     // Affichage des blagues dans le tableau HTML
     function afficherTableau() {
         tableauCorps.innerHTML = '';
